@@ -3,7 +3,7 @@ set -e
 
 
 #Clone ehzrap
-cd /opt; git clone 
+cd /opt; git clone https://github.com/metanomy/ehzrap.git
 
 #Identify apt-get vs yum
 
@@ -15,7 +15,10 @@ cd /opt; git clone
 #EHZRAP Main Interface (based on TerriaJS/NationalMap)
 
 #Get local copy of NationalMap
-git clone https://github.com/NICTA/nationalmap.git
+#git clone https://github.com/NICTA/nationalmap.git
+
+#Get local copy of Aremi branch of NationalMap
+git clone https://github.com/NICTA/aremi-natmap.git
 
 # Get local copy of TerriaJS
 #git clone https://github.com/TerriaJS/terriajs.git
