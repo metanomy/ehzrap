@@ -39,18 +39,18 @@ cd /opt/ehzrap; git clone https://github.com/NICTA/aremi-natmap.git
 #cp /opt/ezhrap
 
 #Metanomy Branding
-cp /opt/ezhrap/images/metanomy-logo-reversed.png /opt/ezhrap/nationalmap/images/
+cp /opt/ehzrap/images/metanomy-logo-reversed.png /opt/ezhrap/nationalmap/images/
 
 #EHZRAP Branding
-cd /opt/ezhrap/images/ehzrap.png /opt/ezhrap/nationalmap/images
+cd /opt/ehzrap/images/ehzrap.png /opt/ezhrap/nationalmap/images
 
 # Replace NationalMap references to EHZRAP
-find /opt/ezhrap/nationalmap -type f -print0 | xargs -0 sed -i 's/The NationalMap/EZHRAP/g'
-find /opt/ezhrap/nationalmap -type f -print0 | xargs -0 sed -i 's/NationalMap/EZHRAP/g'
-find /opt/ezhrap/nationalmap -type f -print0 | xargs -0 sed -i 's/nationalmap/EZHRAP/g'
+find /opt/ehzrap/nationalmap -type f -print0 | xargs -0 sed -i 's/The NationalMap/EZHRAP/g'
+find /opt/ehzrap/nationalmap -type f -print0 | xargs -0 sed -i 's/NationalMap/EZHRAP/g'
+find /opt/ehzrap/nationalmap -type f -print0 | xargs -0 sed -i 's/nationalmap/EZHRAP/g'
 
 #Build NationalMap
-cd /opt/ezhrap/nationalmap
+cd /opt/ehzrap/nationalmap
 npm install
 gulp release
 
