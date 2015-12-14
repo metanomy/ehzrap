@@ -39,10 +39,10 @@ cd /opt/ehzrap; git clone https://github.com/NICTA/aremi-natmap.git
 #cp /opt/ezhrap
 
 #Metanomy Branding
-cp /opt/ehzrap/images/metanomy-logo-reversed.png /opt/ezhrap/nationalmap/images/
+cp /opt/ehzrap/images/metanomy-logo-reversed.png /opt/ehzrap/nationalmap/images/
 
 #EHZRAP Branding
-cd /opt/ehzrap/images/ehzrap.png /opt/ezhrap/nationalmap/images
+cd /opt/ehzrap/images/ehzrap.png /opt/ehzrap/nationalmap/images
 
 # Replace NationalMap references to EHZRAP
 find /opt/ehzrap/nationalmap -type f -print0 | xargs -0 sed -i 's/The NationalMap/EZHRAP/g'
