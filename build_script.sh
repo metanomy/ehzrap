@@ -18,7 +18,7 @@ cd /opt; git clone https://github.com/metanomy/ehzrap.git
 #git clone https://github.com/NICTA/nationalmap.git
 
 #Get local copy of Aremi branch of NationalMap
-git clone https://github.com/NICTA/aremi-natmap.git
+cd /opt/ehzrap; git clone https://github.com/NICTA/aremi-natmap.git
 
 # Get local copy of TerriaJS
 #git clone https://github.com/TerriaJS/terriajs.git
