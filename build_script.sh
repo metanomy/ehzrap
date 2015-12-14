@@ -14,8 +14,7 @@ cd /opt; git clone https://github.com/metanomy/ehzrap.git
 
 #EHZRAP Main Interface (based on TerriaJS/NationalMap)
 
-#Get local copy of NationalMap
-#git clone https://github.com/NICTA/nationalmap.git
+
 
 #Get local copy of Aremi branch of NationalMap
 cd /opt/ehzrap; git clone https://github.com/NICTA/aremi-natmap.git
@@ -39,18 +38,18 @@ cd /opt/ehzrap; git clone https://github.com/NICTA/aremi-natmap.git
 #cp /opt/ezhrap
 
 #Metanomy Branding
-cp /opt/ehzrap/images/metanomy-logo-reversed.png /opt/ehzrap/nationalmap/images/
+cp /opt/ehzrap/images/metanomy-logo-reversed.png /opt/ehzrap/aremi-natmap/images/
 
 #EHZRAP Branding
-cd /opt/ehzrap/images/ehzrap.png /opt/ehzrap/nationalmap/images
+cd /opt/ehzrap/images/ehzrap.png /opt/ehzrap/aremi-natmap/images
 
 # Replace NationalMap references to EHZRAP
-find /opt/ehzrap/nationalmap -type f -print0 | xargs -0 sed -i 's/The NationalMap/EZHRAP/g'
-find /opt/ehzrap/nationalmap -type f -print0 | xargs -0 sed -i 's/NationalMap/EZHRAP/g'
-find /opt/ehzrap/nationalmap -type f -print0 | xargs -0 sed -i 's/nationalmap/EZHRAP/g'
+find /opt/ehzrap/aremi-natmap -type f -print0 | xargs -0 sed -i 's/The NationalMap/EZHRAP/g'
+find /opt/ehzrap/aremi-natmap -type f -print0 | xargs -0 sed -i 's/NationalMap/EZHRAP/g'
+find /opt/ehzrap/aremi-natmap -type f -print0 | xargs -0 sed -i 's/nationalmap/EZHRAP/g'
 
 #Build NationalMap
-cd /opt/ehzrap/nationalmap
+cd /opt/ehzrap/aremi-natmap
 npm install
 gulp release
 
