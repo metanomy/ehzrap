@@ -36,7 +36,7 @@ git clone https://github.com/NICTA/aremi-natmap.git
 #npm install
 
 #Convert NationalMap to EHZRAP
-cp /opt/ezhrap
+#cp /opt/ezhrap
 
 #Metanomy Branding
 cp /opt/ezhrap/images/metanomy-logo-reversed.png /opt/ezhrap/nationalmap/images/
