@@ -52,10 +52,10 @@ find /opt/ehzrap/aremi-natmap -type f -print0 | xargs -0 sed -i 's/NationalMap/E
 find /opt/ehzrap/aremi-natmap -type f -print0 | xargs -0 sed -i 's/nationalmap/EZHRAP/g'
 
 #Build ehzrap Docker
-cd /opt/ehzrap/aremi-natmap; docker build -t ehzrap .
+cd /opt/ehzrap/aremi-natmap; docker build --force-rm=true --no-cache=true --rm=true -t ehzrap .
 
 #Build ehzrap Varnish docker
-cd /opt/ehzrap/aremi-natmap; docker build -t ehzrap-varnish varnish/
+cd /opt/ehzrap/aremi-natmap; docker build --force-rm=true --no-cache=true --rm=true -t ehzrap-varnish varnish/
 
 #Start aremi-natmap docker
 docker run -d -p 3001 --name ehzrap ehzrap
